@@ -5,6 +5,12 @@
 			"waitTime": {
 				"type": "int",
 				"value": 15
+			},
+			"favoriteAnimal": {
+				"type": "object",
+				"value": {
+					"animal": "alpaca"
+				}
 			}
 		}
 	},
