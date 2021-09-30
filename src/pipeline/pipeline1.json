@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"waitTimeInSeconds": {
-						"value": "@pipeline().globalParameters.waitTime",
+						"value": "@pipeline().parameters.waitSeconds",
 						"type": "Expression"
 					}
 				}
@@ -66,6 +66,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"waitSeconds": {
+				"type": "int"
+			}
+		},
 		"annotations": []
 	}
 }
