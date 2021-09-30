@@ -1,0 +1,15 @@
+{
+  "name": "adsfasdf",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node node_modules/@microsoft/azure-data-factory-utilities/lib/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbrink91/adsfasdf.git"
+  },
+  "homepage": "https://github.com/nbrink91/adsfasdf#readme",
+  "dependencies": {
+    "@microsoft/azure-data-factory-utilities": "^0.1.6"
+  }
+}
