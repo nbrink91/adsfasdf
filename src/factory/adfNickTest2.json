@@ -1,0 +1,12 @@
+{
+	"name": "adfNickTest2",
+	"properties": {
+		"globalParameters": {
+			"waitTime": {
+				"type": "int",
+				"value": 15
+			}
+		}
+	},
+	"location": "southcentralus"
+}
