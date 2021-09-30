@@ -5,18 +5,11 @@
 			{
 				"name": "Wait1",
 				"type": "Wait",
-				"dependsOn": [
-					{
-						"activity": "FavoriteAnimal",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"waitTimeInSeconds": {
-						"value": "@pipeline().globalParameters.waitTime",
+						"value": "@pipeline().parameters.waitSeconds",
 						"type": "Expression"
 					}
 				}
@@ -71,24 +64,11 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "FavoriteAnimal",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "favoriteAnimal",
-					"value": {
-						"value": "@pipeline().globalParameters.favoriteAnimal.animal",
-						"type": "Expression"
-					}
-				}
 			}
 		],
-		"variables": {
-			"favoriteAnimal": {
-				"type": "String"
+		"parameters": {
+			"waitSeconds": {
+				"type": "int"
 			}
 		},
 		"annotations": []
