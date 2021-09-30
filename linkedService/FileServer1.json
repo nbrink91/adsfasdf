@@ -1,0 +1,19 @@
+{
+	"name": "FileServer1",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "\\\\baz-filer02\\Homedirs\\nbrink01\\DataFactoryPlayground\\Source",
+			"userId": "corp\\nbrink01",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Password"
+			}
+		}
+	}
+}
